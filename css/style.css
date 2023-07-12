@@ -782,7 +782,7 @@ span {
         grid-template-columns: auto;
         grid-template-rows: repeat(4, 1fr);
         grid-row-gap: 3rem;
-        transform: translateY(-10rem); } }
+        transform: translateY(-6rem); } }
   .hero__card {
     color: #fff;
     text-align: center;
@@ -857,7 +857,7 @@ span {
   letter-spacing: 2px; }
   @media only screen and (max-width: 53.75em) {
     .heading-3--hero {
-      font-size: 1.6rem;
+      font-size: 1.1rem;
       font-weight: 500; } }
 
 .heading-1--hero {
@@ -868,7 +868,7 @@ span {
   backface-visibility: hidden; }
   @media only screen and (max-width: 53.75em) {
     .heading-1--hero {
-      font-size: 6rem; } }
+      font-size: 4.5rem; } }
 
 .heading-4--hero {
   margin-top: 2rem;
