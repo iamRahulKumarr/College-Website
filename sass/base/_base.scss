@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;//1rem = 10px
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 56.25%;//1rem = 9px
+    }
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 50%;//1rem = 8px
+    }
+
+}
+
+body{
+    display: grid;
+    color: $color-black;
+    grid-template-rows: min-content repeat(7, min-content);
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}

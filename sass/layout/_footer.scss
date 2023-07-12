@@ -1,0 +1,259 @@
+.footer {
+  grid-row: 7 / 8;
+  background-color: $color-primary;
+  color: #fff;
+  padding: 5rem 6rem;
+  display: grid;
+  grid-template-columns: 39rem minmax(min-content, 1fr);
+  grid-template-rows: minmax(min-content, 10rem) min-content;
+  grid-row-gap: 7rem;
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 3rem 2rem;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: auto;
+    grid-template-rows: minmax(min-content, 1fr) repeat(4, min-content);
+    background-color: #fff;
+    color: $color-primary;
+  }
+  &__heading-text {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    padding-right: 2rem;
+    @media only screen and (max-width: $bp-medium) {
+      grid-row: 2 /3;
+      width: 90%;
+      padding: 0;
+      
+    }
+  }
+  &__heading--4 {
+    margin-bottom: 2.3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+  }
+  &__menu {
+    margin-bottom: 2.3rem;
+
+    @media only screen and (max-width: $bp-medium) {
+     
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+    }
+  }
+  &__plus {
+    display: none;
+    width: 3rem;
+    height: 3rem;
+    fill: $color-primary;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: block;
+    }
+  }
+  &__list-container {
+    grid-row: 1 / 2;
+    grid-column: 2 / -1;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(min-content, 1fr));
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / -1;
+      display: flex;
+      flex-direction: column;
+      border-top: 1px solid #dadde1;
+      border-bottom: 1px solid #dadde1;
+      padding: 2.4rem 0;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    font-size: 1.3rem;
+    display: grid;
+    grid-row-gap: 1.4rem;
+
+    &--1,
+    &--2,
+    &--3,
+    &--4 {
+      @media only screen and (max-width: $bp-medium) {
+        display: none;
+        width: 90%;
+        margin: auto auto 3rem auto;
+      }
+    }
+  }
+
+  &__links {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-weight: 600;
+      color: currentColor;
+      transition: all 0.3s;
+
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 3rem;
+        font-weight: 500;
+      }
+    }
+    &:hover,
+    &:active {
+      color: $color-secondary;
+
+      @media only screen and (max-width: $bp-medium) {
+        color: $color-primary;
+      }
+    }
+  }
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    transition: all 0.3s;
+    opacity: 0.7;
+    font-weight: 300;
+    color: currentColor;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.55rem;
+      font-weight: 600;
+      opacity: 1;
+    }
+  }
+  &__link:hover,
+  &__link:active {
+    color: $color-secondary;
+    opacity: 1;
+
+    @media only screen and (max-width: $bp-medium) {
+      color: $color-primary;
+    }
+  }
+
+  &__heading-list {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-row: 3 / 4;
+      width: 90%;
+     
+    }
+  }
+
+  &__heading--5 {
+    font-weight: 600;
+    align-self: end;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__heading--list {
+    padding-top: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    display: grid;
+    list-style: none;
+    align-content: center;
+    grid-row-gap: 0.5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+     font-weight: 400;
+     font-size: 1.5rem;
+    }
+  }
+  &__heading--list-1 {
+    padding: 0;
+    align-content: start;
+  }
+
+  &__heading--link:link,
+  &__heading--link:visited {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+    @media only screen and (max-width: $bp-medium) {
+      color: $color-primary;
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+  }
+
+  &__heading--link:hover,
+  &__heading--link:active {
+    color: $color-secondary;
+    opacity: 1;
+
+    @media only screen and (max-width: $bp-medium) {
+      color: $color-primary;
+    }
+  }
+
+  &__svg-copyright {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-row: 4 / 5;
+      grid-column: 1 / 2;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+      width: 90%;
+     
+    }
+  }
+  &__container-svg{
+    margin-bottom: 2rem;
+  }
+
+  &__svg {
+    display: inline-block;
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: #fff;
+    transition: all 0.3s;
+
+    @media only screen and (max-width: $bp-medium) {
+      fill: $color-primary;
+    }
+
+    &:hover {
+      fill: $color-secondary;
+
+      @media only screen and (max-width: $bp-medium) {
+        color: $color-primary;
+      }
+    }
+  }
+  &__svg-link {
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+}
