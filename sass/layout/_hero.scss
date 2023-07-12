@@ -137,8 +137,9 @@
     color: $color-secondary;
     letter-spacing: 2px;
 
-@media only screen and (max-width: $bp-small){
-  font-size: 1.4rem;
+@media only screen and (max-width: $bp-medium){
+  font-size: 1.6rem;
+  font-weight: 500;
 }
   }
   &-1--hero {
@@ -148,7 +149,7 @@
     animation: toTop 1.4s ease;
     backface-visibility: hidden;
 
-    @media only screen and (max-width: $bp-small){
+    @media only screen and (max-width: $bp-medium){
       font-size: 6rem;
     }
   }

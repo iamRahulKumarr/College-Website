@@ -855,9 +855,10 @@ span {
   transform: translateY(-6.2rem);
   color: #fd0;
   letter-spacing: 2px; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 53.75em) {
     .heading-3--hero {
-      font-size: 1.4rem; } }
+      font-size: 1.6rem;
+      font-weight: 500; } }
 
 .heading-1--hero {
   font-size: 9rem;
@@ -865,7 +866,7 @@ span {
   letter-spacing: 3px;
   animation: toTop 1.4s ease;
   backface-visibility: hidden; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 53.75em) {
     .heading-1--hero {
       font-size: 6rem; } }
 
