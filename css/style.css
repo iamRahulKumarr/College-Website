@@ -8,6 +8,7 @@
     opacity: 1; } }
 
 @keyframes animateWidth {
+  
   0% {
     width: 0; }
   100% {
