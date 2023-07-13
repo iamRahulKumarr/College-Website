@@ -1,19 +1,22 @@
 .enroll {
   grid-row: 4 / 5;
-  display: grid;
-  grid-template-columns: 6rem 0.7rem repeat(2, minmax(min-content, 1fr));
-  grid-template-rows: min-content;
-  padding: 5rem 0;
-
-  @media only screen and (max-width: $bp-medium) {
-    grid-template-columns: 6rem 0.7rem minmax(min-content, 1fr);
-    grid-template-rows: repeat(2, minmax(min-content, 1fr));
+  &__container{
+    display: grid;
+    grid-template-columns: 6rem 0.7rem repeat(2, minmax(min-content, 1fr));
+    grid-template-rows: min-content;
+    padding: 5rem 0;
+  
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 6rem 0.7rem minmax(min-content, 1fr);
+      grid-template-rows: repeat(2, minmax(min-content, 1fr));
+    }
+  
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: 3rem 0.7rem minmax(min-content, 1fr);
+      
+    }
   }
-
-  @media only screen and (max-width: $bp-small) {
-    grid-template-columns: 3rem 0.7rem minmax(min-content, 1fr);
-    
-  }
+ 
 
   &__red {
     background-color: $color-primary;
@@ -33,6 +36,10 @@
     @media only screen and (max-width: $bp-medium) {
       margin: 7rem auto 2rem auto;
       grid-row: 1 / 2;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      margin: 7rem auto .5rem auto;
+ 
     }
   }
 

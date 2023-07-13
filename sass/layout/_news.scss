@@ -1,13 +1,16 @@
 .news {
   grid-row: 6 / 7;
-  display: grid;
-  grid-template-columns: 6rem 0.7rem min-content 0.1rem 1fr;
-  grid-template-rows: 0.7rem min-content;
+  &__container {
+    display: grid;
+    grid-template-columns: 6rem 0.7rem min-content 0.1rem 1fr;
+    grid-template-rows: 0.7rem min-content;
 
-  @media only screen and (max-width: $bp-medium) {
-    grid-template-columns: auto;
-    grid-template-rows: 0.7rem repeat(2, minmax(min-content, 1fr));
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: auto;
+      grid-template-rows: 0.7rem repeat(2, minmax(min-content, 1fr));
+    }
   }
+
   &__logo {
     grid-row: 1 / span 2;
     grid-column: 3 / 4;
@@ -59,7 +62,7 @@
     @media only screen and (max-width: $bp-medium) {
       grid-row: 3 / 4;
       grid-column: 1 / -1;
-     padding-bottom: 7rem;
+      padding-bottom: 7rem;
     }
   }
 

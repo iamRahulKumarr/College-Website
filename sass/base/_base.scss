@@ -22,7 +22,6 @@ html{
 body{
     display: grid;
     color: $color-black;
-    grid-template-rows: min-content repeat(7, min-content);
-    font-size: 1.6rem;
+   font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
 }

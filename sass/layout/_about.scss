@@ -1,6 +1,7 @@
 .about {
   grid-row: 3 / 4;
-  display: grid;
+  &__container{
+    display: grid;
   grid-template-columns: 6rem 0.7rem 1fr 1fr;
   grid-template-rows: 6rem 0.7rem 7rem repeat(3, min-content);
   background-color: $color-grey;
@@ -10,6 +11,7 @@
   }
   @media only screen and (max-width: $bp-small){
     grid-template-columns: 3rem 0.7rem 1fr 1fr;
+  }
   }
 
   &__blue {
@@ -112,7 +114,6 @@
     margin-bottom: 8rem;
     align-self: start;
     border: 2px solid $color-secondary !important;
-
     &--link {
       text-align: center;
       text-transform: uppercase;
