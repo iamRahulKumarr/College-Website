@@ -66,6 +66,9 @@ body {
 .heading-2 {
   font-weight: 400;
   font-size: 4.3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-2 {
+      font-size: 3.5rem !important; } }
 
 .heading-4 {
   text-transform: uppercase;
