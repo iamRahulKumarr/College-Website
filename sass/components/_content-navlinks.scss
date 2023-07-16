@@ -1,0 +1,49 @@
+.content-nav-links {
+  display: flex;
+  margin-top: 4rem;
+  margin-left: 12rem;
+  justify-content: space-between;
+
+  &__small {
+    width: 20%;
+    @media only screen and (max-width: $bp-small) {
+      margin: 4rem auto 0 auto;
+      width: 50%;
+    }
+  }
+  &__medium {
+    width: 30%;
+    @media only screen and (max-width: $bp-small) {
+      margin: 4rem auto 0 auto;
+      width: 60%;
+    }
+  }
+  &__large {
+    width: 50%;
+    @media only screen and (max-width: $bp-small) {
+      margin: 4rem auto 0 auto;
+      width: 80%;
+    }
+  }
+}
+
+.nav-link {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $color-black;
+    font-size: 1.6rem;
+    opacity: 0.6;
+  }
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+
+  &-active {
+    &:link,
+    &:visited {
+      opacity: 1;
+    }
+  }
+}

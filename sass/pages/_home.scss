@@ -1,0 +1,18 @@
+.home{
+    &__about{
+        grid-row: 3 / 4;
+    }
+    &__enroll{
+        grid-row: 4 / 5;
+    }
+    &__news{
+        grid-row: 5 / 6;
+        margin-bottom: 7rem;
+    }
+    &__subscribe{
+        grid-row: 6 / 7;
+    }
+    &__footer{
+        grid-row: 7 / 8;
+    }
+}

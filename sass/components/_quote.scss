@@ -1,0 +1,26 @@
+.quote {
+    padding: 5rem 4rem;
+    &__container {
+      text-align: center;
+      margin: 15rem 0;
+    }
+    &__heading-2 {
+      font-size: 2.3rem;
+      letter-spacing: 0.5px;
+  
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 1.7rem;
+      }
+    }
+    &__heading-4 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      color: $color-primary;
+      margin-bottom: 3.5rem;
+  
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 1.2rem;
+      }
+    }
+  }

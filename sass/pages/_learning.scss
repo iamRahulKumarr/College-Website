@@ -1,0 +1,121 @@
+.learning {
+  &__content-nav-links {
+    grid-row: 3 / 4;
+  }
+  &__quote {
+    grid-row: 4 / 5;
+  }
+  &__feat {
+    grid-row: 5 / 6;
+  }
+
+  &__courses {
+    grid-row: 6 / 7;
+    margin: 6rem;
+
+    @media only screen and (max-width: $bp-large) {
+      margin: 4rem;
+    }
+  }
+  &__news {
+    grid-row: 7 / 8;
+  }
+  &__footer {
+    grid-row: 8 / 9;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+
+    &--item {
+      position: relative;
+      background-color: $color-grey;
+      background-size: 2%;
+      background-repeat: no-repeat;
+      transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+      width: 35rem;
+      height: 33rem;
+      padding: 5rem;
+      z-index: 1;
+      @media only screen and (max-width: $bp-large) {
+        width: 100%;
+      }
+      &-red {
+        background-image: linear-gradient(
+          to left,
+          transparent 0%,
+          transparent 50%,
+          $color-primary 50%
+        );
+
+        &:link,
+        &:visited {
+          text-decoration: none;
+          color: $color-black;
+        }
+        &:hover,
+        &:active {
+          background-size: 200%;
+          color: #fff;
+        }
+      }
+      &-blue {
+        background-image: linear-gradient(
+          to left,
+          transparent 0%,
+          transparent 50%,
+          $color-blue 50%
+        );
+
+        &:link,
+        &:visited {
+          text-decoration: none;
+          color: $color-black;
+        }
+        &:hover,
+        &:active {
+          background-size: 200%;
+          color: #fff;
+        }
+      }
+
+      &-yellow {
+        background-image: linear-gradient(
+          to left,
+          transparent 0%,
+          transparent 50%,
+          $color-secondary 50%
+        );
+        &:link,
+        &:visited {
+          text-decoration: none;
+          color: $color-black;
+        }
+        &:hover,
+        &:active {
+          background-size: 200%;
+          color: $color-black;
+        }
+      }
+    }
+
+    &--btn {
+      p {
+        position: absolute;
+        bottom: 2rem;
+        margin-top: 5rem;
+        font-size: 1.7rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        padding: 2rem 3.5rem;
+        border: 1px solid #000;
+        background-color: #fff;
+        text-align: center;
+        z-index: 5;
+        color: $color-black;
+      }
+    }
+  }
+}

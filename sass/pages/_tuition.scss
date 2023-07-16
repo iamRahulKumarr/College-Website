@@ -1,0 +1,32 @@
+.tuition {
+  &__content-nav-links {
+    grid-row: 3 / 4;
+  }
+  &__quote {
+    grid-row: 4 / 5;
+  }
+  &__container {
+    grid-row: 5 / 6;
+  }
+  &__footer {
+    &-grid {
+      grid-row: 6 / 7;
+      margin: 6rem;
+  
+      @media only screen and (max-width: $bp-small) {
+        margin: 3rem;
+      }
+    }
+    &-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      grid-column-gap: 5rem;
+    }
+  }
+  &__news {
+    grid-row: 7 / 8;
+  }
+  &__footer {
+    grid-row: 8 / 9;
+  }
+}

@@ -1,0 +1,33 @@
+.leaders {
+  &__content-nav-links {
+    grid-row: 3 / 4;
+  }
+  &__quote {
+    grid-row: 4 / 5;
+  }
+  &__1 {
+    grid-row: 5 / 6;
+  }
+  &__2 {
+    grid-row: 6 / 7;
+  }
+  &__3 {
+    grid-row: 7 / 8;
+  }
+  &__4 {
+    grid-row: 8 / 9;
+  }
+  &__1,
+  &__2,
+  &__3,
+  &__4 {
+    margin-bottom: 5rem;
+  }
+
+  &__news {
+    grid-row: 9 / 10;
+  }
+  &__footer {
+    grid-row: 10 / 11;
+  }
+}

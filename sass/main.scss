@@ -6,13 +6,26 @@
 @import 'base/typography';
 @import 'base/utilities';
 
-@import 'layout/about';
-@import 'layout/enroll';
+@import 'components/buttons';
+@import 'components/content-navlinks';
+@import 'components/form';
+@import 'components/quote';
+
 @import 'layout/footer';
+@import 'layout/grids';
 @import 'layout/header';
 @import 'layout/hero';
-@import 'layout/news';
+@import 'layout/navigation';
+@import 'layout/subscribe';
 
+@import 'pages/about';
+@import 'pages/application';
+@import 'pages/contact';
+@import 'pages/enrolment';
 @import 'pages/home';
-
-
+@import 'pages/latest';
+@import 'pages/leadership';
+@import 'pages/learning';
+@import 'pages/news';
+@import 'pages/principal';
+@import 'pages/tuition';
